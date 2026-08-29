@@ -1,15 +1,18 @@
 {
-  "generatedAt": "2026-08-29T18:37:05.264506+00:00",
-  "universe": true,
-  "batch": true,
-  "ohlcv": true,
-  "source": "binance",
+  "generatedAt": "2026-08-29T18:50:00.745760+00:00",
+  "universe": false,
+  "batch": false,
+  "ohlcv": false,
+  "source": null,
   "errors": [
-    "OUSDT:binance_ohlcv:ValueError('need >=100 candles')",
-    "OUSDT:bybit_ohlcv:ValueError('need >=100 candles')"
+    "binance_universe:HTTPError('451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo')",
+    "binance_batch:HTTPError('451 Client Error:  for url: https://fapi.binance.com/fapi/v1/ticker/24hr')",
+    "bybit_batch:HTTPError('403 Client Error: Forbidden for url: https://api.bybit.com/v5/market/tickers?category=linear')",
+    "BTCUSDT:binance_ohlcv:HTTPError('451 Client Error:  for url: https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=1d&limit=120')",
+    "BTCUSDT:bybit_ohlcv:HTTPError('403 Client Error: Forbidden for url: https://api.bybit.com/v5/market/kline?category=linear&symbol=BTCUSDT&interval=D&limit=120')"
   ],
-  "green": true,
-  "universeCount": 522,
-  "candidateCount": 8,
-  "deepCount": 7
+  "green": false,
+  "universeCount": 0,
+  "candidateCount": 0,
+  "deepCount": 0
 }
